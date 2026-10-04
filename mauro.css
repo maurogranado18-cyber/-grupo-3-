@@ -1,0 +1,23 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    
+}
+
+.form-control::placeholder {
+  color: #b0b0b0 !important;
+  opacity: 1;
+}
+ 
+body{
+    display:flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin:0;
+}
+
+main{
+    flex:1;
+    padding-top:80px;
+}
