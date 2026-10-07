@@ -3,7 +3,9 @@
     padding:0;
     box-sizing:border-box;
     
+    
 }
+
 
 .form-control::placeholder {
   color: #b0b0b0 !important;
@@ -16,6 +18,7 @@ body{
     min-height: 100vh;
     margin:0;
 }
+
 
 main{
     flex:1;
