@@ -24,3 +24,19 @@ main{
     flex:1;
     padding-top:80px;
 }
+
+.navbar-search {
+  width: 100%;
+  max-width: 320px;
+  margin: 0.75rem auto; /* Espaciado dentro del menú colapsado */
+}
+
+/* Solo se aplica en desktop */
+@media (min-width: 992px) {
+  .navbar-search {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    margin: 0; 
+  }
+}
