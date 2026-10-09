@@ -16,40 +16,111 @@
     <!--NAVAR-->
 
     <header>
-      <nav class="navbar navbar-expand-lg navbar-dark bg-black fixed-top px-4">
-        <a class="navbar-brand fw-bold text-primary" href="#">NÉBULA</a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarNav"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-black fixed-top px-3">
+    <div class="container-fluid">
+      <!-- 1. Brand -->
+      <a class="navbar-brand fw-bold text-primary me-3" href="#">NÉBULA</a>
 
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a class="nav-link active" href="#">Inicio</a>
-            </li>
-            <li class="nav-item"><a class="nav-link" href="#">Series</a></li>
-            <li class="nav-item"><a class="nav-link" href="#">Películas</a></li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Mis Favoritos</a>
-            </li>
-          </ul>
-          <!-- Buscador -->
-          <form class="d-flex" role="search">
-            <input
-              class="form-control me-2 bg-dark text-white border-secondary"
-              type="search"
-              placeholder="Buscar títulos..."
-              aria-label="Search"
-            />
-          </form>
-        </div>
-      </nav>
-    </header>
+      <!-- 2. Perfil (visible siempre en móvil y escritorio) -->
+      <div class="dropdown order-lg-last ms-auto me-2 me-lg-0">
+        <a
+          href="#"
+          class="d-flex align-items-center text-white text-decoration-none dropdown-toggle"
+          id="dropdownUser"
+          data-bs-toggle="dropdown"
+          aria-expanded="false"
+        >
+          <img
+            src="https://img.magnific.com/vector-premium/persona-camisa-azul-que-dice-nombre-persona_1029948-7040.jpg?semt=ais_hybrid&w=740&q=80"
+            alt="Perfil"
+            width="38"
+            height="38"
+            class="rounded-circle object-fit-cover border border-secondary"
+          />
+        </a>
+        <ul class="dropdown-menu dropdown-menu-end dropdown-menu-dark shadow mt-2" aria-labelledby="dropdownUser">
+          <li class="px-3 py-2 border-bottom border-secondary">
+            <span class="d-block fw-bold text-white">Mauro Granado</span>
+           
+          </li>
+          <li><a class="dropdown-item mt-2" href="#">Mi Perfil</a></li>
+          <li><a class="dropdown-item" href="#">Configuración</a></li>
+          <li><a class="dropdown-item" href="#">Suscripción</a></li>
+          <li><hr class="dropdown-divider border-secondary" /></li>
+          <li><a class="dropdown-item text-danger" href="#">Cerrar Sesión</a></li>
+        </ul>
+      </div>
+
+      <!-- 3. Botón Menú Hamburguesa -->
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarNav"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- 4. Contenido colapsable (Links + Buscador) -->
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" href="#">Inicio</a>
+          </li>
+          <li class="nav-item"><a class="nav-link" href="#">Series</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Películas</a></li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Mis Favoritos</a>
+          </li>
+        </ul>
+
+        <!-- Buscador -->
+        <form class="d-flex my-2 my-lg-0 mx-auto" role="search" style="max-width: 320px; width: 100%;">
+          <input
+            class="form-control bg-dark text-white border-secondary rounded-pill px-3"
+            type="search"
+            placeholder="Buscar títulos..."
+            aria-label="Search"
+          />
+        </form>
+      </div>
+    </div>
+  </nav>
+</header>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
 
 
 <main >
