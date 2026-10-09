@@ -6,7 +6,13 @@
   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
 }
 
+
 body {
+background-image: url(/assets/img/bg.fondo.jpg);
+background-repeat: no-repeat;
+background-size: cover;
+background-position: center;
+background-attachment: fixed;
   background-color: #12151d;
   color: #ffffff;
   min-height: 100vh;
@@ -177,3 +183,39 @@ footer {
   color: #6b7280;
   font-size: 0.8rem;
 }
+
+body .carta-nebula {
+  background-color: rgba(20, 20, 31, 0.85);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+
+} 
+
+
+
+@media (max-width: 576px) {
+  body .carta-nebula {
+    width: 82%;
+    margin: 0 auto;
+    padding: 1.5rem 1rem;
+  }
+}
+
+
+@media (min-width: 577px) and (max-width: 992px) {
+  body .carta-nebula {
+    width: 65%;
+    max-width: 480px;
+    margin: 0 auto;
+    padding: 2rem 1.5rem;
+  }
+}
+
+
+
+  
+
+
+
+  
+  

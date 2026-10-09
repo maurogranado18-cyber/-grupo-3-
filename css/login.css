@@ -8,7 +8,10 @@
 }
 
 body {
+  background-image: url('../assets/img/bg.fondo.jpg');
   background-color: #12151d;
+  background-size: cover;
+  background-position: center;
   color: #ffffff;
   min-height: 100vh;
   display: flex;
@@ -154,3 +157,41 @@ a:hover {
   color: #3b82f6;
   text-decoration: none; /* Mantiene el logo limpio sin subrayado */
 }
+
+
+/* Estilos para pantallas de celulares (hasta 576px) */
+@media (max-width: 576px) {
+  .carta-nebula {
+   
+   
+    
+    /* Centra la tarjeta horizontalmente */
+    margin: 0 auto; 
+    
+    /* Disminuye el relleno interno para que no ocupe tanto alto */
+    padding: 1.5rem 1rem ; 
+    
+    /*  ajusta la opacidad del fondo si quieres que trasluzca más */
+    background-color: rgba(20, 20, 31, 0.85); 
+  }
+
+  /* Ajusta los tamaños de inputs para adaptarse al nuevo ancho */
+  .carta-nebula input[type="email"],
+  .carta-nebula input[type="password"] {
+    width: 100%;
+    box-sizing: border-box;
+  }
+}
+
+@media (min-width: 577px) and (max-width: 992px) {
+  .carta-nebula {
+    padding: 2rem 1.5rem;
+    background-color: rgba(20, 20, 31, 0.9);
+  }
+}
+ 
+ 
+ 
+  .carta-nebula{
+     background-color: rgba(20, 20, 31, 0.9);
+  }
