@@ -1,0 +1,209 @@
+/* normalización */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Hero */
+
+.hero{
+    background-image: url('/assets/fondoSugerida.jpg');
+    background-size: cover;
+    background-position: top; 
+    height: 75vh;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 15px;
+    margin: 15px 
+}
+
+.presentacion{
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  font-size: 15px;
+  margin: 10px; 
+}
+
+.p1{
+    background-color: #287CFF;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.p2{
+    padding: 5px 1px;
+    border-radius: 5px;
+}
+.titulo{
+    font-size: 45px;
+    font-weight: bold;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+.metadatos{
+    font-size: 12px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    font-weight: bold;
+}
+
+.afinidad{
+    color: #44e613;
+    font-weight: bold;
+}
+
+.duracion{
+    background-color: #504e4e;
+    padding: 0px 3px;
+    border-radius: 5px;
+}
+
+.calidad{
+    color: #000000;
+    font-weight: bold;
+}
+
+
+.btn{
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    padding: 6px 20px;
+    border: rgb(71, 68, 68) 1px solid;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+    margin-left: 10px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  }
+
+  .reproducir{
+    background-color: rgb(231, 227, 227);
+    color:#000000
+  }
+
+  .reproducir:hover{
+    background-color: #504e4e;
+    color:#287CFF;
+  }
+
+  .mas-info{
+    background-color: #504e4e75;
+  }
+
+  .mas-info:hover{
+    background-color: #504e4e;
+    color:#287CFF;
+  }
+
+  
+
+/* cuerpo-sugeridas */
+
+.poster {
+  width: 200px;
+  min-width: 200px;
+  height: 300px;
+  margin: 5px;
+  border-radius: 10px;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.poster img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.peliscroll::-webkit-scrollbar {
+  height: 6px;
+}
+.peliscroll::-webkit-scrollbar-thumb {
+  background: #444;
+  border-radius: 3px;
+}
+
+
+/* Banner */
+
+.banner-suscripcion {
+  background: linear-gradient(135deg, #287CFF, #000000);
+  color: #fff;
+}
+
+.suscribite{
+  background-color: white;
+  color: #000000;
+}
+
+.suscribite:hover{
+   border: white 2px solid;
+   color:white;
+   background-color: #287CFF;
+}
+
+.categoria:hover {
+  border: white 3px solid;
+}
+
+.categoria{
+  font-size: 20px;
+  font-weight: bold;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 300px;
+}
+
+.categoria-ficcion{
+  background-color: rgb(97, 20, 169);
+}
+.categoria-ficcion:hover{
+  background-color: rgb(97, 20, 169);
+}
+
+
+.categoria-comedia{
+  background-color: rgb(230, 230, 17);
+  color: #000000;
+}
+.categoria-comedia:hover{
+  background-color: rgb(230, 230, 17);
+  color: #000000;
+}
+
+.categoria-suspenso{
+  background-color: #504e4e75;
+}
+.categoria-suspenso:hover{
+  background-color: #504e4e75;
+}
+
+.categoria-drama{
+  background-color: #042965;
+}
+.categoria-drama:hover{
+  background-color: #042965;
+}
+
+.categoria-accion{
+  background-color: #eb0000;
+}
+.categoria-accion:hover{
+  background-color: #eb0000;
+}
+
+.categoria-documental{
+  background-color: #005700 ;
+}
+
+.categoria-documental:hover{
+  background-color: #005700 ;
+}
