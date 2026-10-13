@@ -10,11 +10,11 @@
     border-radius: 10px;
 }
 
-.btn{
+.obtener{
     background-color: #287cff;
 }
 
-.btn:hover{
+.obtener:hover{
     background-color: #287cff;
     border: 1px solid #ffffff;
 }
