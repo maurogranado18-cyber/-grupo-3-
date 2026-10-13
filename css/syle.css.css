@@ -1,13 +1,12 @@
 /* DAR CONTEXTO GENERAL A LAS OJAS DE ESTILO*/
 
 @import "/css/general.css";
-@import "/css/index.css";
+
 @import "/css/login.css";
 @import"/css/varable.css";
 
-
-
-
+@import"/css/register.css";
+@import "/css/nvbar.css";
 
 
 

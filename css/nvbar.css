@@ -21,10 +21,7 @@
     margin: 0;
 }
 
-.nebula-index-main {
-    flex: 1;
-    padding-top: 80px;
-}
+
 
 /* Buscador en la barra de navegación */
 .nebula-index-search-form {
