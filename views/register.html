@@ -7,23 +7,23 @@
     <title>Registro - NÉBULA</title>
   </head>
 
-  <body>
-    <main>
-      <section id="Formulario-registro-usuario">
+  <body class="nebula-register-body">
+    <main class="nebula-register-main">
+      <section class="nebula-register-section" id="Formulario-registro-usuario">
         <!-- Marca NÉBULA -->
-        <div class="brand-logo">
-          <a href="index.html">NÉBULA</a>
+        <div class="nebula-register-brand-logo">
+          <a href="index.html" class="nebula-register-brand-link">NÉBULA</a>
         </div>
 
-        <header>
-          <h1>Crear cuenta</h1>
-          <p>Completa el formulario para registrarte en la plataforma</p>
+        <header class="nebula-register-header">
+          <h1 class="nebula-register-title">Crear cuenta</h1>
+          <p class="nebula-register-subtitle">Completa el formulario para registrarte en la plataforma</p>
         </header>
 
-        <form action="/views/login.html">
-          <article>
-            <div>
-              <label for="Nombre">Nombre de usuario</label>
+        <form action="/views/login.html" class="nebula-register-form">
+          <article class="nebula-register-fieldset-group">
+            <div class="nebula-register-field">
+              <label for="Nombre" class="nebula-register-label">Nombre de usuario</label>
               <input
                 type="text"
                 id="Nombre"
@@ -32,11 +32,12 @@
                 placeholder="Tu usuario"
                 minlength="4"
                 maxlength="10"
+                class="nebula-register-input"
               />
             </div>
 
-            <div>
-              <label for="contraseña">Contraseña</label>
+            <div class="nebula-register-field">
+              <label for="contraseña" class="nebula-register-label">Contraseña</label>
               <input
                 type="password"
                 id="contraseña"
@@ -47,25 +48,27 @@
                 maxlength="15"
                 pattern="^(?=.*[A-Z])(?=.*\d).{8,15}$"
                 title="La contraseña debe tener entre 8 y 15 caracteres, e incluir al menos una letra mayúscula y un número."
+                class="nebula-register-input"
               />
             </div>
 
-            <div>
-              <label for="email">Correo electrónico</label>
+            <div class="nebula-register-field">
+              <label for="email" class="nebula-register-label">Correo electrónico</label>
               <input
                 type="email"
                 id="email"
                 name="email"
                 placeholder="ejemplo@correo.com"
                 required
+                class="nebula-register-input"
               />
             </div>
           </article>
 
-          <article>
-            <div>
-              <label for="provincia">Provincia</label>
-              <select name="provincia" id="provincia" required>
+          <article class="nebula-register-fieldset-group">
+            <div class="nebula-register-field">
+              <label for="provincia" class="nebula-register-label">Provincia</label>
+              <select name="provincia" id="provincia" required class="nebula-register-select">
                 <option value="" selected disabled>
                   Selecciona tu provincia
                 </option>
@@ -76,20 +79,20 @@
             </div>
           </article>
 
-          <button type="submit">Registrarse</button>
+          <button type="submit" class="nebula-register-submit-btn">Registrarse</button>
         </form>
 
-        <div class="secondary-links">
-          <p>
+        <div class="nebula-register-secondary-links">
+          <p class="nebula-register-login-text">
             ¿Ya tienes una cuenta?
-            <a href="/views/login.html">Inicia sesión aquí</a>
+            <a href="/views/login.html" class="nebula-register-login-link">Inicia sesión aquí</a>
           </p>
         </div>
       </section>
     </main>
 
-    <footer>
-      <small>© 2026 NÉBULA. Todos los derechos reservados.</small>
+    <footer class="nebula-register-footer">
+      <small class="nebula-register-copyright">&copy; 2026 NÉBULA. Todos los derechos reservados.</small>
     </footer>
   </body>
 </html>

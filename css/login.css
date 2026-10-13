@@ -7,95 +7,119 @@
   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
 }
 
-body {
+/* --- ESTILOS DE FONDO Y ESTRUCTURA (PROTEGIDOS) --- */
+.nebula-login-body {
   background-image: url('../assets/img/bg.fondo.jpg');
   background-color: #12151d;
   background-size: cover;
   background-position: center;
+  background-attachment: fixed; /* Asegura que el fondo no se mueva */
   color: #ffffff;
   min-height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
+  margin: 0;
 }
 
 /* Contenedor principal centrado */
-main {
+.nebula-login-main {
   width: 100%;
   max-width: 420px;
   padding: 20px;
+  display: flex;
+  justify-content: center;
 }
 
-section {
-  background-color: #1c202b;
+/* --- LA TARJETA (CARD) CON TRANSPARENCIA (CORREGIDO) --- */
+.nebula-login-section {
+  /* Fondo transparente con desenfoque (glassmorphism) */
+  background-color: rgba(20, 20, 31, 0.85) !important; /* Aplicamos la transparencia aquí */
+  backdrop-filter: blur(8px); /* Desenfoque del fondo */
+  -webkit-backdrop-filter: blur(8px);
+  
   padding: 40px 30px;
   border-radius: 12px;
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.5);
-  border: 1px solid #2a2f3d;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.6);
+  border: 1px solid rgba(42, 47, 61, 0.7); /* Borde sutil */
+  width: 100%;
 }
 
-h1 {
+/* --- ELEMENTOS INTERNOS (NO TRANSPARENTES) --- */
+.nebula-login-title {
   font-size: 1.8rem;
   font-weight: 700;
   margin-bottom: 24px;
+  margin-top: 0;
   text-align: center;
   letter-spacing: 0.5px;
 }
 
-/* Estilos del formulario */
-form {
+/* Formulario */
+.nebula-login-form {
   display: flex;
   flex-direction: column;
   gap: 18px;
 }
 
-form div {
+.nebula-login-field {
   display: flex;
   flex-direction: column;
   gap: 6px;
 }
 
-label {
+.nebula-login-label {
   font-size: 0.9rem;
-  color: #cccccc;
+  color: #d1d5db; /* Gris más claro para contraste */
 }
 
-input[type="email"],
-input[type="password"] {
+/* Inputs y Select (Fondo sólido para que NO se transparenten) */
+.nebula-login-input {
   width: 100%;
   padding: 12px 14px;
   border-radius: 6px;
   border: 1px solid #333947;
-  background-color: #0d0f14;
+  background-color: #0d0f14 !important; /* Fondo SÓLIDO aquí */
   color: #ffffff;
   font-size: 0.95rem;
   outline: none;
   transition: border-color 0.2s ease, box-shadow 0.2s ease;
 }
 
-input[type="email"]:focus,
-input[type="password"]:focus {
+.nebula-login-input:focus {
   border-color: #2563eb;
-  box-shadow: 0 0 0 2px rgba(37, 99, 235, 0.3);
+  box-shadow: 0 0 0 2px rgba(37, 99, 235, 0.4);
 }
 
-input::placeholder {
+.nebula-login-input::placeholder {
   color: #6b7280;
 }
 
 /* Checkbox "Recordarme" */
-form div:has(input[type="checkbox"]) {
+.nebula-login-checkbox-wrapper {
+  display: flex;
   flex-direction: row;
   align-items: center;
 }
 
-input[type="checkbox"] {
-  accent-color: #2563eb;
+.nebula-login-checkbox-label {
+  font-size: 0.9rem;
+  color: #d1d5db;
+  display: flex;
+  align-items: center;
+  gap: 8px;
   cursor: pointer;
 }
 
+.nebula-login-checkbox {
+  accent-color: #2563eb;
+  cursor: pointer;
+  width: 16px;
+  height: 16px;
+}
+
 /* Botón principal */
-button[type="submit"] {
+.nebula-login-submit-btn {
   margin-top: 10px;
   padding: 12px;
   border: none;
@@ -108,90 +132,75 @@ button[type="submit"] {
   transition: background-color 0.2s ease, transform 0.1s ease;
 }
 
-button[type="submit"]:hover {
+.nebula-login-submit-btn:hover {
   background-color: #1d4ed8;
 }
 
-button[type="submit"]:active {
+.nebula-login-submit-btn:active {
   transform: scale(0.98);
 }
 
 /* Enlaces secundarios */
-section > div {
+.nebula-login-secondary-links {
   margin-top: 24px;
   text-align: center;
   display: flex;
   flex-direction: column;
-  gap: 8px;
+  gap: 10px;
   font-size: 0.88rem;
   color: #9ca3af;
 }
 
-a {
+.nebula-login-link-item {
+  margin: 0;
+}
+
+.nebula-login-link {
   color: #3b82f6;
   text-decoration: none;
   transition: color 0.2s ease;
 }
 
-a:hover {
+.nebula-login-link:hover {
   color: #60a5fa;
   text-decoration: underline;
 }
 
-/* Contenedor del logo dentro de la tarjeta */
-.brand-logo {
+/* LOGO NÉBULA */
+.nebula-login-brand-logo {
   text-align: center;
-  margin-bottom: 12px;
+  margin-bottom: 15px;
 }
 
-.brand-logo p {
-  font-size: 1.8rem;
+.nebula-login-brand-text {
+  font-size: 2rem;
   font-weight: 800;
-  color: #1a67ff; /* Mismo azul del navbar */
-  text-decoration: none;
-  letter-spacing: 1px;
+  color: #1a67ff;
+  letter-spacing: 1.5px;
   text-transform: uppercase;
+  margin: 0;
 }
 
-.brand-logo a:hover {
-  color: #3b82f6;
-  text-decoration: none; /* Mantiene el logo limpio sin subrayado */
-}
+/* --- MEDIA QUERIES (AJUSTADAS) --- */
 
-
-/* Estilos para pantallas de celulares (hasta 576px) */
 @media (max-width: 576px) {
-  .carta-nebula {
-   
-   
-    
-    /* Centra la tarjeta horizontalmente */
-    margin: 0 auto; 
-    
-    /* Disminuye el relleno interno para que no ocupe tanto alto */
-    padding: 1.5rem 1rem ; 
-    
-    /*  ajusta la opacidad del fondo si quieres que trasluzca más */
-    background-color: rgba(20, 20, 31, 0.85); 
+  .nebula-login-main {
+    padding: 10px;
+  }
+  
+  .nebula-login-section {
+    padding: 30px 20px;
+    background-color: rgba(20, 20, 31, 0.8) !important; /* Un poco menos transparente en móvil */
   }
 
-  /* Ajusta los tamaños de inputs para adaptarse al nuevo ancho */
-  .carta-nebula input[type="email"],
-  .carta-nebula input[type="password"] {
-    width: 100%;
-    box-sizing: border-box;
+  .nebula-login-brand-text {
+    font-size: 1.8rem;
   }
 }
 
 @media (min-width: 577px) and (max-width: 992px) {
-  .carta-nebula {
-    padding: 2rem 1.5rem;
-    background-color: rgba(20, 20, 31, 0.9);
+  .nebula-login-section {
+    padding: 35px 25px;
+    background-color: rgba(20, 20, 31, 0.9) !important;
   }
 }
- 
- 
- 
-  .carta-nebula{
-     background-color: rgba(20, 20, 31, 0.9);
-  }

@@ -6,13 +6,12 @@
   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
 }
 
-
-body {
-background-image: url(/assets/img/bg.fondo.jpg);
-background-repeat: no-repeat;
-background-size: cover;
-background-position: center;
-background-attachment: fixed;
+.nebula-register-body {
+  background-image: url(/assets/img/bg.fondo.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
   background-color: #12151d;
   color: #ffffff;
   min-height: 100vh;
@@ -24,13 +23,13 @@ background-attachment: fixed;
 }
 
 /* CENTRAR EL CONTENEDOR PRINCIPAL */
-main {
+.nebula-register-main {
   width: 100%;
   max-width: 440px;
   padding: 0 20px;
 }
 
-#Formulario-registro-usuario {
+.nebula-register-section {
   background-color: #1c202b;
   padding: 36px 30px;
   border-radius: 12px;
@@ -39,12 +38,12 @@ main {
 }
 
 /* LOGO DE LA PAGINA */
-.brand-logo {
+.nebula-register-brand-logo {
   text-align: center;
   margin-bottom: 10px;
 }
 
-.brand-logo a {
+.nebula-register-brand-link {
   font-size: 1.8rem;
   font-weight: 800;
   color: #1a67ff;
@@ -54,51 +53,49 @@ main {
 }
 
 /* ENCABEZADO */
-header {
+.nebula-register-header {
   text-align: center;
   margin-bottom: 24px;
 }
 
-header h1 {
+.nebula-register-title {
   font-size: 1.6rem;
   font-weight: 700;
   margin-bottom: 6px;
 }
 
-header p {
+.nebula-register-subtitle {
   font-size: 0.88rem;
   color: #9ca3af;
 }
 
 /* Formulario */
-form {
+.nebula-register-form {
   display: flex;
   flex-direction: column;
   gap: 16px;
 }
 
-article {
+.nebula-register-fieldset-group {
   display: flex;
   flex-direction: column;
   gap: 16px;
 }
 
-form div {
+.nebula-register-field {
   display: flex;
   flex-direction: column;
   gap: 6px;
 }
 
-label {
+.nebula-register-label {
   font-size: 0.88rem;
   color: #d1d5db;
 }
 
 /* Inputs y Select */
-input[type="text"],
-input[type="password"],
-input[type="email"],
-select {
+.nebula-register-input,
+.nebula-register-select {
   width: 100%;
   padding: 12px 14px;
   border-radius: 6px;
@@ -111,7 +108,7 @@ select {
 }
 
 /* Estilo específico para el selector de provincia */
-select {
+.nebula-register-select {
   cursor: pointer;
   appearance: none; /* Elimina la flecha por defecto en navegadores antiguos */
   background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%239ca3af' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3e%3cpolyline points='6 9 12 15 18 9'%3e%3c/polyline%3e%3c/svg%3e");
@@ -120,24 +117,24 @@ select {
   background-size: 16px;
 }
 
-select option {
+.nebula-register-select option {
   background-color: #1c202b;
   color: #ffffff;
 }
 
 /* Foco en los inputs */
-input:focus,
-select:focus {
+.nebula-register-input:focus,
+.nebula-register-select:focus {
   border-color: #2563eb;
   box-shadow: 0 0 0 2px rgba(37, 99, 235, 0.3);
 }
 
-input::placeholder {
+.nebula-register-input::placeholder {
   color: #6b7280;
 }
 
 /* Botón de submit */
-button[type="submit"] {
+.nebula-register-submit-btn {
   margin-top: 10px;
   padding: 12px;
   border: none;
@@ -150,72 +147,63 @@ button[type="submit"] {
   transition: background-color 0.2s ease, transform 0.1s ease;
 }
 
-button[type="submit"]:hover {
+.nebula-register-submit-btn:hover {
   background-color: #1d4ed8;
 }
 
-button[type="submit"]:active {
+.nebula-register-submit-btn:active {
   transform: scale(0.98);
 }
 
 /* Enlaces secundarios */
-.secondary-links {
+.nebula-register-secondary-links {
   margin-top: 20px;
   text-align: center;
   font-size: 0.88rem;
   color: #9ca3af;
 }
 
-.secondary-links a {
+.nebula-register-login-link {
   color: #3b82f6;
   text-decoration: none;
 }
 
-.secondary-links a:hover {
+.nebula-register-login-link:hover {
   color: #60a5fa;
   text-decoration: underline;
 }
 
 /* Pie de página */
-footer {
+.nebula-register-footer {
   margin-top: 24px;
   text-align: center;
   color: #6b7280;
   font-size: 0.8rem;
 }
 
-body .carta-nebula {
+/* Clases de carta / media queries por si las utilizas */
+.nebula-register-body .carta-nebula {
   background-color: rgba(20, 20, 31, 0.85);
   backdrop-filter: blur(8px);
   -webkit-backdrop-filter: blur(8px);
-
 } 
 
-
-
 @media (max-width: 576px) {
-  body .carta-nebula {
+  .nebula-register-body .carta-nebula {
     width: 82%;
     margin: 0 auto;
     padding: 1.5rem 1rem;
   }
 }
 
-
 @media (min-width: 577px) and (max-width: 992px) {
-  body .carta-nebula {
+  .nebula-register-body .carta-nebula {
     width: 65%;
     max-width: 480px;
     margin: 0 auto;
     padding: 2rem 1.5rem;
   }
 }
-
-
-
-  
-
-
 
   
   

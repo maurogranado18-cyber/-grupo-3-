@@ -7,25 +7,27 @@
 }
 
 
-.form-control::placeholder {
+/* Estilos para el placeholder del buscador */
+.nebula-index-search-input::placeholder {
   color: #b0b0b0 !important;
   opacity: 1;
 }
  
-body{
-    display:flex;
+/* Estructura general de la página de inicio */
+.nebula-index-body {
+    display: flex;
     flex-direction: column;
     min-height: 100vh;
-    margin:0;
+    margin: 0;
 }
 
-
-main{
-    flex:1;
-    padding-top:80px;
+.nebula-index-main {
+    flex: 1;
+    padding-top: 80px;
 }
 
-.navbar-search {
+/* Buscador en la barra de navegación */
+.nebula-index-search-form {
   width: 100%;
   max-width: 320px;
   margin: 0.75rem auto; /* Espaciado dentro del menú colapsado */
@@ -33,7 +35,7 @@ main{
 
 /* Solo se aplica en desktop */
 @media (min-width: 992px) {
-  .navbar-search {
+  .nebula-index-search-form {
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
