@@ -1,0 +1,32 @@
+/* ===== Página "Acerca de nosotros" ===== */
+
+/* Frase destacada del equipo */
+.about-frase {
+  max-width: 700px;
+  padding: 1rem 1.5rem;
+  border-left: 4px solid var(--color-acento, #287CFF);
+  background-color: rgba(255, 255, 255, 0.05);
+  border-radius: 0 0.5rem 0.5rem 0;
+}
+
+/* Cada integrante */
+.miembro {
+  transition: transform 0.25s ease;
+}
+
+.miembro:hover {
+  transform: translateY(-6px);
+}
+
+/* Foto circular, siempre cuadrada y sin deformarse */
+.miembro-foto {
+  display: block;
+  width: 100%;
+  max-width: 180px;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 3px solid var(--color-acento, #287CFF);
+  margin-left: auto;
+  margin-right: auto;
+}
