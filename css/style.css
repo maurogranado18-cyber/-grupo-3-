@@ -8,31 +8,39 @@
 @import"/css/register.css";
 @import "/css/nvbar.css";
 
-/* --- ESTILOS GLOBALES NÉBULA --- */
+/* ==========================================
+   NÉBULA - ESTILOS GLOBALES UNIFICADOS
+   ========================================== */
+
+/* Fondo general y color base */
 body {
   background-color: #0b0f19 !important;
   color: #f9fafb !important;
-  font-family: 'Montserrat', 'Inter', sans-serif;
   min-height: 100vh;
 }
 
-/* Títulos de Categoría más prolijos y proporcionados */
-.category-header h1, 
-.category-header .display-5,
-header h1 {
-  font-size: 1.8rem !important;
-  font-weight: 700 !important;
-  letter-spacing: 0.5px;
-  color: #f3f4f6 !important;
-  margin-top: 1rem;
+/* --- NAVBAR (FUENTES DEFAULT DE BOOTSTRAP) --- */
+.navbar-nav .nav-link {
+  font-size: 0.95rem;
+  transition: color 0.2s ease;
 }
 
-.category-header p {
-  font-size: 0.95rem !important;
-  color: #9ca3af !important;
+/* Links inactivos (gris opaco/transparente) */
+.navbar-nav .nav-link.text-white-50 {
+  color: rgba(255, 255, 255, 0.55) !important;
 }
 
-/* Tarjetas Oscuras Cósmicas */
+.navbar-nav .nav-link.text-white-50:hover {
+  color: rgba(255, 255, 255, 0.85) !important;
+}
+
+/* Link activo (blanco) */
+.navbar-nav .nav-link.active,
+.navbar-nav .nav-link.text-white {
+  color: #ffffff !important;
+}
+
+/* --- TARJETAS CÓSMICAS --- */
 .card, .card-nebula {
   background-color: #111827 !important;
   border: 1px solid #1f2937 !important;
@@ -47,14 +55,16 @@ header h1 {
   transform: translateY(-4px);
 }
 
-/* Elementos internos de las tarjetas */
-.card .bg-secondary, .card-nebula .bg-secondary {
-  background-color: #1f2937 !important;
-  color: #9ca3af !important;
-  border-radius: 8px;
+/* Imágenes dentro de las tarjetas */
+.card-nebula img.card-img-top,
+.card img.card-img-top {
+  width: 100%;
+  height: 240px !important;
+  object-fit: cover !important;
+  border-radius: 8px 8px 0 0;
 }
 
-/* Botones de Paginación */
+/* --- PAGINACIÓN --- */
 .pagination .page-link {
   background-color: #111827;
   border-color: #1f2937;
@@ -66,32 +76,8 @@ header h1 {
   border-color: #7c3aed;
   color: #ffffff;
 }
-
-/* Estilo para posters dentro de las tarjetas */
-.card-nebula img.card-img-top,
-.card img.card-img-top {
-  height: 220px;
-  object-fit: cover;
-  border-radius: 8px;
-}
-
-/* Ajuste exacto para los posters de las tarjetas */
-.card-nebula img.card-img-top,
-.card img.card-img-top {
-  width: 100%;
-  height: 240px !important;
-  object-fit: cover !important;
-  border-radius: 8px 8px 0 0;
-}
-/* Forzar fuente Montserrat / Inter global en todos los elementos */
-* {
-  font-family: 'Montserrat', 'Inter', system-ui, -apple-system, sans-serif !important;
-}
-
-/* Ajuste específico para el logo y los links del navbar */
-.navbar-brand, 
-.nav-link, 
-.dropdown-item,
-.nebula-index-brand {
-  font-family: 'Montserrat', sans-serif !important;
+/* Quitar cualquier grosor forzado en los links del navbar */
+.navbar-nav .nav-link {
+  font-weight: 400 !important;
+  letter-spacing: normal !important;
 }
