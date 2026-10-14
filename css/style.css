@@ -2,45 +2,36 @@
    NÉBULA - ESTILOS GLOBALES UNIFICADOS
    ========================================== */
 
-/* Fondo general y color base */
-body {
-  background-color: #0b0f19 !important;
-  color: #f9fafb !important;
+/* Fondo general y color base de las páginas de categorías */
+.category-page {
+  background-color: #0b0f19;
+  color: #f9fafb;
   min-height: 100vh;
 }
 
-/* --- NAVBAR (FUENTES DEFAULT DE BOOTSTRAP) --- */
+/* --- NAVBAR --- */
 .navbar-nav .nav-link {
   font-size: 0.95rem;
   transition: color 0.2s ease;
 }
 
-/* Links inactivos (gris opaco/transparente) */
-.navbar-nav .nav-link.text-white-50 {
-  color: rgba(255, 255, 255, 0.55) !important;
-}
-
-.navbar-nav .nav-link.text-white-50:hover {
-  color: rgba(255, 255, 255, 0.85) !important;
-}
-
-/* Link activo (blanco) */
-.navbar-nav .nav-link.active,
-.navbar-nav .nav-link.text-white {
-  color: #ffffff !important;
+.navbar-nav .nav-link.active {
+  color: #ffffff;
 }
 
 /* --- TARJETAS CÓSMICAS --- */
-.card, .card-nebula {
-  background-color: #111827 !important;
-  border: 1px solid #1f2937 !important;
-  color: #f9fafb !important;
+.card,
+.card-nebula {
+  background-color: #111827;
+  border: 1px solid #1f2937;
+  color: #f9fafb;
   border-radius: 12px;
   transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
 }
 
-.card:hover, .card-nebula:hover {
-  border-color: #7c3aed !important;
+.card:hover,
+.card-nebula:hover {
+  border-color: #7c3aed;
   box-shadow: 0 8px 20px rgba(124, 58, 237, 0.35);
   transform: translateY(-4px);
 }
@@ -49,8 +40,8 @@ body {
 .card-nebula img.card-img-top,
 .card img.card-img-top {
   width: 100%;
-  height: 240px !important;
-  object-fit: cover !important;
+  height: 240px;
+  object-fit: cover;
   border-radius: 8px 8px 0 0;
 }
 
@@ -65,49 +56,4 @@ body {
   background-color: #7c3aed;
   border-color: #7c3aed;
   color: #ffffff;
-}
-/* Quitar cualquier grosor forzado en los links del navbar */
-.navbar-nav .nav-link {
-  font-weight: 400 !important;
-  letter-spacing: normal !important;
-}
-
-/* Buscador centrado en desktop y centrado en el menú colapsado en móvil */
-.nav-search-form {
-  justify-content: center;
-  width: 100%;
-  max-width: 320px;
-  margin: 0.75rem auto;
-}
-
-@media (min-width: 992px) {
-  .nav-search-form {
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 260px;
-    margin: 0;
-  }
-}
-
-/* Input de búsqueda redondeado estilo streaming */
-.nav-search-input {
-  background-color: rgba(255, 255, 255, 0.22) !important;
-  border: 1px solid rgba(255, 255, 255, 0.4) !important;
-  color: #ffffff !important;
-  border-radius: 20px !important; /* Forma redondeada tipo píldora */
-  padding: 5px 15px !important;
-  font-size: 0.85rem !important;
-  width: 200px;
-}
-
-.nav-search-input::placeholder {
-  color: rgba(255, 255, 255, 0.6) !important;
-}
-
-.nav-search-input:focus {
-  background-color: rgba(255, 255, 255, 0.28) !important;
-  border-color: #7c3aed !important;
-  box-shadow: 0 0 8px rgba(124, 58, 237, 0.5) !important;
-  outline: none !important;
 }
