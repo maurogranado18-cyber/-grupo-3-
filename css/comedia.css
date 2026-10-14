@@ -1,60 +1,44 @@
-/* Estilos para Comedia y Ciencia Ficción */
-.category-header {
-  padding: 3rem 0 2rem;
-  border-bottom: 1px solid #1f2937;
-  margin-bottom: 2.5rem;
-}
-
-.category-title {
-  font-size: 2.5rem;
-  font-weight: 800;
-  letter-spacing: 1px;
-}
-
-/* Tarjetas de Películas / Series */
-.movie-card {
-  background-color: #111827;
-  border: 1px solid #1f2937;
+/* Estilos para las Tarjetas de NÉBULA */
+.card-nebula {
+  background-color: #111827 !important;
+  border: 1px solid #1f2937 !important;
   border-radius: 12px;
-  overflow: hidden;
   transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
-  height: 100%;
 }
 
-.movie-card:hover {
+/* Efecto al pasar el mouse por arriba */
+.card-nebula:hover {
   transform: translateY(-6px);
+  border-color: #7c3aed !important;
+  box-shadow: 0 10px 25px rgba(124, 58, 237, 0.35);
+}
+
+/* Estilo para los bordes y textos dentro de las tarjetas */
+.card-nebula .bg-secondary {
+  background-color: #1f2937 !important;
+  color: #9ca3af !important;
+  border-radius: 8px;
+}
+
+.card-nebula h6 {
+  color: #f9fafb !important;
+  font-size: 0.95rem;
+  letter-spacing: 0.3px;
+}
+
+.card-nebula small {
+  color: #a855f7 !important;
+}
+
+/* Botones de Paginación (Anterior / Siguiente) */
+.pagination .page-link {
+  background-color: #111827;
+  border-color: #1f2937;
+  color: #e5e7eb;
+}
+
+.pagination .page-item.active .page-link {
+  background-color: #7c3aed;
   border-color: #7c3aed;
-  box-shadow: 0 10px 25px rgba(124, 58, 237, 0.25);
-}
-
-.movie-poster {
-  width: 100%;
-  height: 320px;
-  object-fit: cover;
-}
-
-.movie-body {
-  padding: 1.25rem;
-}
-
-.movie-title {
-  font-size: 1.2rem;
-  font-weight: 700;
-  color: #f9fafb;
-  margin-bottom: 0.5rem;
-}
-
-.movie-info {
-  font-size: 0.9rem;
-  color: #9ca3af;
-  margin-bottom: 1rem;
-}
-
-.badge-nebula {
-  background-color: rgba(124, 58, 237, 0.2);
-  color: #a855f7;
-  border: 1px solid rgba(168, 85, 247, 0.4);
-  font-weight: 500;
-  padding: 0.35em 0.65em;
-  border-radius: 6px;
+  color: #ffffff;
 }
