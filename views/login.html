@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/css/syle.css.css">
+  <title>Iniciar Sesión - NÉBULA</title>
+</head>
+<body class="nebula-login-body">
+
+  <main class="nebula-login-main">
+    <section class="carta-nebula nebula-login-section">
+      <!-- Logo / Nombre de la marca -->
+      <div class="brand-logo nebula-login-brand-logo">
+        <p class="nebula-login-brand-text">NÉBULA</p>
+      </div>
+      
+      <div class="container-inicio-sesion nebula-login-container">
+        <header class="nebula-login-header">
+          <h1 class="nebula-login-title">Iniciar Sesión</h1>
+        </header>
+
+        <form action="/index.html" class="nebula-login-form">
+          
+          <!-- Campo para Email o Usuario -->
+          <div class="nebula-login-field">
+            <label for="email" class="nebula-login-label">Correo electrónico:</label>
+            <input 
+              type="email" 
+              id="email" 
+              name="email" 
+              placeholder="ejemplo@correo.com" 
+              required
+              class="nebula-login-input"
+            >
+          </div>
+
+          <!-- Campo para Contraseña -->
+          <div class="nebula-login-field">
+            <label for="password" class="nebula-login-label">Contraseña:</label>
+            <input 
+              type="password" 
+              id="password" 
+              name="password" 
+              placeholder="Mínimo 8 caracteres" 
+              minlength="8" 
+              maxlength="20"
+              pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[!@#$%^&*()_+\-=\[\]{};':&quot;\\|,.&lt;&gt;/?]).{8,20}$"
+              title="Debe incluir al menos 8 caracteres, una mayúscula, una minúscula, un número y un carácter especial."
+              required
+              class="nebula-login-input"
+            >
+          </div>
+
+          <!-- Opción Recordarme -->
+          <div class="nebula-login-checkbox-wrapper">
+            <label class="nebula-login-checkbox-label">
+              <input type="checkbox" name="remember" class="nebula-login-checkbox"> Recordarme
+            </label>
+          </div>
+
+          <!-- Botón de envío -->
+          <button type="submit" class="nebula-login-submit-btn">Ingresar</button>
+        </form>
+
+        <!-- Enlaces secundarios -->
+        <div class="secondary-links nebula-login-secondary-links">
+          <p class="nebula-login-link-item"><a href="#" class="nebula-login-link">¿Olvidaste tu contraseña?</a></p>
+          <p class="nebula-login-link-item">¿No tienes cuenta? <a href="/views/register.html" class="nebula-login-link">Regístrate aquí</a></p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+</body>
+</html>

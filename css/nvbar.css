@@ -1,0 +1,41 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    
+    
+}
+
+
+/* Estilos para el placeholder del buscador */
+.nebula-index-search-input::placeholder {
+  color: #b0b0b0 !important;
+  opacity: 1;
+}
+ 
+/* Estructura general de la página de inicio */
+.nebula-index-body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+}
+
+
+
+/* Buscador en la barra de navegación */
+.nebula-index-search-form {
+  width: 100%;
+  max-width: 320px;
+  margin: 0.75rem auto; /* Espaciado dentro del menú colapsado */
+}
+
+/* Solo se aplica en desktop */
+@media (min-width: 992px) {
+  .nebula-index-search-form {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    margin: 0; 
+  }
+}
