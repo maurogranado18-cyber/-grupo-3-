@@ -66,3 +66,32 @@ header h1 {
   border-color: #7c3aed;
   color: #ffffff;
 }
+
+/* Estilo para posters dentro de las tarjetas */
+.card-nebula img.card-img-top,
+.card img.card-img-top {
+  height: 220px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+/* Ajuste exacto para los posters de las tarjetas */
+.card-nebula img.card-img-top,
+.card img.card-img-top {
+  width: 100%;
+  height: 240px !important;
+  object-fit: cover !important;
+  border-radius: 8px 8px 0 0;
+}
+/* Forzar fuente Montserrat / Inter global en todos los elementos */
+* {
+  font-family: 'Montserrat', 'Inter', system-ui, -apple-system, sans-serif !important;
+}
+
+/* Ajuste específico para el logo y los links del navbar */
+.navbar-brand, 
+.nav-link, 
+.dropdown-item,
+.nebula-index-brand {
+  font-family: 'Montserrat', sans-serif !important;
+}
