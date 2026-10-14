@@ -4,11 +4,88 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Succession</title>
+  <link rel="stylesheet" href="/css/nvbar.css">
 
   <!-- Bootstrap 5-->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+    crossorigin="anonymous">
 </head>
 <body>
+ <!-- NAVBAR -->
+  <header class="nebula-index-header">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-black fixed-top px-3 nebula-index-navbar">
+      <div class="container-fluid">
+        <!-- 1. Marca -->
+        <a class="navbar-brand fw-bold text-primary me-3 nebula-index-brand" href="/index.html">NÉBULA</a>
+
+        <!-- 2. Botón Menú Hamburguesa -->
+        <button
+          class="navbar-toggler nebula-index-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- 3. Perfil -->
+        <div class="dropdown order-lg-last ms-auto me-2 me-lg-0 nebula-index-profile-dropdown">
+          <a
+            href="#"
+            class="d-flex align-items-center text-white text-decoration-none dropdown-toggle nebula-index-profile-toggle"
+            id="dropdownUser"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+          >
+            <img
+              src="https://img.magnific.com/vector-premium/persona-camisa-azul-que-dice-nombre-persona_1029948-7040.jpg?semt=ais_hybrid&w=740&q=80"
+              alt="Perfil"
+              width="38"
+              height="38"
+              class="rounded-circle object-fit-cover border border-secondary nebula-index-avatar"
+            />
+          </a>
+          <ul class="dropdown-menu dropdown-menu-end dropdown-menu-dark shadow mt-2 nebula-index-menu" aria-labelledby="dropdownUser">
+            <li class="px-3 py-2 border-bottom border-secondary">
+              <span class="d-block fw-bold text-white nebula-index-username">Mauro esteban</span>
+            </li>
+            <li><a class="dropdown-item mt-2 nebula-index-menu-item" href="#">Mi Perfil</a></li>
+            <li><a class="dropdown-item nebula-index-menu-item" href="#">Configuración</a></li>
+            <li><a class="dropdown-item nebula-index-menu-item" href="/views/planes.html">Suscripción</a></li>
+            <li><hr class="dropdown-divider border-secondary" /></li>
+            <li><a class="dropdown-item text-danger nebula-index-menu-logout" href="/views/login.html">Cerrar Sesión</a></li>
+          </ul>
+        </div>
+
+        <!-- 4. Contenido colapsable (Links + Buscador) -->
+        <div class="collapse navbar-collapse nebula-index-collapse" id="navbarNav">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0 nebula-index-nav-list">
+            <li class="nav-item">
+              <a class="nav-link active nebula-index-nav-link" href="/index.html">Inicio</a>
+            </li>
+            <li class="nav-item"><a class="nav-link nebula-index-nav-link" href="#">Series</a></li>
+            <li class="nav-item"><a class="nav-link nebula-index-nav-link" href="#">Películas</a></li>
+            <li class="nav-item">
+              <a class="nav-link nebula-index-nav-link" href="#">Mis Favoritos</a>
+            </li>
+          </ul>
+
+          <!-- Buscador -->
+          <form class="d-flex navbar-search nebula-index-search-form" role="search">
+            <input class="form-control bg-dark text-white border-secondary rounded-pill px-3 nebula-index-search-input"
+              type="search" placeholder="Buscar títulos..." aria-label="Search" />
+          </form>
+        </div>
+      </div>
+    </nav>
+  </header>
 
   <!--video fondo, título y botones -->
   <header class="position-relative overflow-hidden" style="height: 70vh;">
@@ -67,6 +144,11 @@
 
     </div>
   </main>
-
+ <!-- Bootstrap JS Bundle -->
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+    crossorigin="anonymous"
+  ></script>
 </body>
 </html>
