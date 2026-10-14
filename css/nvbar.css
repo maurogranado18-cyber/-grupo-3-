@@ -39,3 +39,7 @@
     margin: 0; 
   }
 }
+
+.nebula-index-footer-title {
+  font-size: 2.0rem; /* nebula del footer de planes */
+}

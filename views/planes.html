@@ -5,25 +5,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Planes Nébula</title>
-    <!-- bootstrap -->
+    <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <!-- Estilos propios -->
-     <link rel="stylesheet" href="/css/styles.css">
-
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="/css/nvbar.css">
 </head>
 
-<body>
+<body class="bg-dark text-white">
 
-    <!-- Header: Mauro -->
+   
 
-    <main>
+    <!-- Main con margen superior para compensar el fixed-top -->
+    <main style="margin-top: 90px;">
         <h1 class="fw-bold m-3">Planes disponibles:</h1>
         <h3 class="m-3">Elige el plan que mas se adapte a vos</h3>
         <section class="d-flex flex-wrap gap-4 justify-content-center m-5">
 
+            <!-- Plan Básico -->
             <div class="basico">
-                <div class="card planes" style="width: 20rem;height: 600px;">
+                <div class="card planes" style="width: 20rem; height: 600px;">
                     <div class="card_top">
                         <h3 class="card-title">Básico</h3>
                     </div>                        
@@ -38,12 +40,13 @@
                 </div>
             </div>
 
+            <!-- Plan Estándar -->
             <div class="estandar">
                 <div class="card planes" style="width: 20rem; height: 600px;">
                     <div class="card_top">
                         <h3 class="card-title">Estándar</h3>
                     </div>                        
-                    <div class="card-body  d-flex flex-column justify-content-between">
+                    <div class="card-body d-flex flex-column justify-content-between">
                         <h5 class="card-title">Características</h5>
                         <p class="card-text">• Series y películas; sin publicidad y sin límite</p>
                         <p class="card-text">• Puedes ver contenido en 2 dispositivos compatibles a la vez</p>
@@ -55,12 +58,13 @@
                 </div>
             </div>
 
+            <!-- Plan Premium -->
             <div class="premium">
                 <div class="card planes" style="width: 20rem; height: 600px;">
                     <div class="card_top">
                         <h3 class="card-title">Premium</h3>
                     </div>                        
-                    <div class="card-body  d-flex flex-column justify-content-between">
+                    <div class="card-body d-flex flex-column justify-content-between">
                         <h5 class="card-title">Características</h5>
                         <p class="card-text">• Series y películas; sin publicidad y sin límite</p>
                         <p class="card-text">• Puedes ver contenido en 4 dispositivos compatibles a la vez</p>
@@ -72,9 +76,33 @@
                     </div>
                 </div>
             </div>
+
         </section>
     </main>
 
+    <!-- Footer -->
+    <footer class="bg-black text-secondary py-4 mt-5 border-top border-secondary nebula-index-footer">
+      <div class="container text-center nebula-index-footer-container">
+        <a href="/index.html" class="text-primary fw-bold mb-1 nebula-index-footer-title">NÉBULA</a>
+        <p class="small mb-3 nebula-index-footer-text">
+          Tu próxima historia favorita está a un solo clic.
+        </p>
+
+        <div class="d-flex justify-content-center gap-3 mb-3 small nebula-index-footer-links">
+          <a href="/views/contacto.html" class="text-secondary text-decoration-none">Contactanos</a>
+          <a href="#" class="text-secondary text-decoration-none">Términos del servicio</a>
+          <a href="#" class="text-secondary text-decoration-none">Privacidad</a>
+          <a href="#" class="text-secondary text-decoration-none">Uso de cookies</a>
+          <a href="/views/about.html" class="text-secondary text-decoration-none">Acerca de nosotros</a>
+        </div>
+
+        <p class="small mb-0 nebula-index-footer-copy">
+          &copy; 2026 NÉBULA. Todos los derechos reservados.
+        </p>
+      </div>
+    </footer>
+
+    <!-- Bootstrap JS Bundle -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
         crossorigin="anonymous"></script>
